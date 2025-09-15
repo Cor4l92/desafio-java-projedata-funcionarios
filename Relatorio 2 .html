@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Desafio Java - Projedata Informática</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+            /* Corrigido para garantir que o texto seja visível em qualquer fundo */
+            color: #333;
+        }
+        pre {
+            background-color: #000; /* Preto puro */
+            color: #fff; /* Corrigido para branco puro */
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, 'Courier New', monospace;
+            margin: 15px 0;
+            border: 1px solid #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        pre code {
+            background-color: #000; /* Garante que o fundo do código dentro do pre seja preto */
+            color: #fff; /* Garante que o texto do código dentro do pre seja branco */
+        }
+        .success {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .contact {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .project-tree {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-family: Consolas, Monaco, 'Courier New', monospace;
+            overflow-x: auto;
+            border: 1px solid #333;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 RELATÓRIO DE IMPLEMENTAÇÃO — DESAFIO PRÁTICO JAVA</h1>
+
+    <p><strong>Desenvolvido por:</strong> Sandro Luis de Paula Junior<br>
+    <strong>Cargo pretendido:</strong> Desenvolvedor de Software (Atendimento Técnico) — Júnior<br>
+    <strong>Empresa:</strong> Projedata Informática<br>
+    <strong>Data:</strong> 05/04/2025<br>
+    <strong>GitHub:</strong> <a href="https://github.com/Cor4l92/desafio-java-projedata-funcionarios" target="_blank">github.com/Cor4l92/desafio-java-projedata-funcionarios</a><br>
+    <strong>E-mail:</strong> sandro.sd.luis@gmail.com<br>
+    <strong>WhatsApp:</strong> <a href="https://wa.me/5532991063549" target="_blank">+55 32 9 9106-3549</a></p>
+
+    <h2>🎯 OBJETIVO</h2>
+    <p>Desenvolver uma aplicação Java que gerencie uma lista de funcionários de uma indústria, realizando operações como inserção, remoção, formatação, cálculos, agrupamentos e ordenações, conforme especificado no desafio prático da Projedata Informática.</p>
+    <p>Este projeto foi desenvolvido como parte do processo seletivo para a vaga de <strong>Desenvolvedor de Software (Atendimento Técnico) — Júnior</strong>, demonstrando habilidades em lógica de programação, manipulação de dados, uso de coleções, formatação e boas práticas de organização de código.</p>
+
+    <h2>✅ REQUISITOS IMPLEMENTADOS</h2>
+
+    <h3>1. Classe <code>Pessoa</code></h3>
+    <p><strong>Atributos:</strong><br>
+    - <code>nome</code> (String)<br>
+    - <code>dataNascimento</code> (LocalDate)</p>
+
+    <pre><code>public class Pessoa {
+    private String nome;
+    private LocalDate dataNascimento;
+
+    public Pessoa(String nome, LocalDate dataNascimento) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+    }
+
+    // Getters e Setters
+}</code></pre>
+    <p class="success">✅ Status: Implementado com sucesso.</p>
+
+    <h3>2. Classe <code>Funcionario</code> (herda de <code>Pessoa</code>)</h3>
+    <p><strong>Atributos adicionais:</strong><br>
+    - <code>salario</code> (BigDecimal)<br>
+    - <code>funcao</code> (String)</p>
+
+    <pre><code>public class Funcionario extends Pessoa {
+    private BigDecimal salario;
+    private String funcao;
+
+    public Funcionario(String nome, LocalDate dataNascimento, BigDecimal salario, String funcao) {
+        super(nome, dataNascimento);
+        this.salario = salario;
+        this.funcao = funcao;
+    }
+
+    // Getters, Setters e toString()
+}</code></pre>
+    <p class="success">✅ Status: Implementado com sucesso.</p>
+
+    <h3>3. Classe <code>Principal</code> — Execução das ações</h3>
+
+    <h4>3.1 – Inserir todos os funcionários</h4>
+    <pre><code>funcionarios.add(new Funcionario("Maria", LocalDate.of(2000, 10, 10), new BigDecimal("2009.44"), "Operador"));
+funcionarios.add(new Funcionario("João", LocalDate.of(1990, 5, 12), new BigDecimal("2284.38"), "Operador"));
+// ... demais funcionários</code></pre>
+    <p class="success">✅ Status: Lista criada com todos os 10 funcionários, na ordem da tabela.</p>
+
+    <h4>3.2 – Remover o funcionário “João”</h4>
+    <pre><code>funcionarios.removeIf(f -> f.getNome().equals("João"));</code></pre>
+    <p class="success">✅ Status: Funcionário "João" removido com sucesso. Restaram 9 funcionários.</p>
+
+    <h4>3.3 – Imprimir todos os funcionários com formatação</h4>
+    <p><strong>Formatação aplicada:</strong><br>
+    - Data: <code>dd/MM/yyyy</code> (ex: 10/10/2000)<br>
+    - Salário: Separador de milhar como ponto, decimal como vírgula (ex: R$ 2.009,44)</p>
+    <pre><code>DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+String salarioFormatado = String.format("%.2f", f.getSalario().doubleValue()).replace('.', ',');</code></pre>
+    <p class="success">✅ Status: Todos os dados exibidos corretamente conforme especificação.</p>
+
+    <h4>3.4 – Aplicar aumento de 10% no salário</h4>
+    <pre><code>for (Funcionario f : funcionarios) {
+    BigDecimal novoSalario = f.getSalario().multiply(new BigDecimal("1.10"));
+    f.setSalario(novoSalario);
+}</code></pre>
+    <p class="success">✅ Status: Aumento aplicado a todos os funcionários. Valores atualizados.</p>
+
+    <h4>3.5 – Agrupar funcionários por função em um Map</h4>
+    <p><strong>Estrutura:</strong><br>
+    - Chave: <code>String</code> (função)<br>
+    - Valor: <code>List<Funcionario></code></p>
+    <pre><code>Map<String, List<Funcionario>> mapaPorFuncao = new HashMap<>();
+for (Funcionario f : funcionarios) {
+    mapaPorFuncao.computeIfAbsent(f.getFuncao(), k -> new ArrayList<>()).add(f);
+}</code></pre>
+    <p class="success">✅ Status: Agrupamento realizado com sucesso.</p>
+
+    <h4>3.6 – Imprimir funcionários agrupados por função</h4>
+    <pre><code>Operador:
+ - Maria | 10/10/2000 | R$ 2.210,38
+ - Heitor | 19/11/1999 | R$ 1.718,99</code></pre>
+    <p class="success">✅ Status: Impressão realizada conforme agrupamento.</p>
+
+    <h4>3.8 – Imprimir aniversariantes dos meses 10 e 12</h4>
+    <pre><code>if (mes == 10 || mes == 12) { ... }</code></pre>
+    <p class="success">✅ Status: Funcionários "Maria" (10/10) e "Miguel" (14/10) exibidos corretamente.</p>
+
+    <h4>3.9 – Imprimir funcionário com maior idade</h4>
+    <p><strong>Lógica:</strong><br>
+    - Comparar pela data de nascimento (menor data = mais velho)<br>
+    - Calcular idade: <code>anoAtual - anoNascimento</code></p>
+    <pre><code>Funcionario maisVelho = funcionarios.stream()
+        .min(Comparator.comparing(Pessoa::getDataNascimento))
+        .orElse(null);
+int idade = Year.now().getValue() - maisVelho.getDataNascimento().getYear();</code></pre>
+    <p class="success">✅ Status: "Caio" identificado como mais velho, com 64 anos.</p>
+
+    <h4>3.10 – Imprimir lista por ordem alfabética</h4>
+    <pre><code>funcionarios.sort(Comparator.comparing(Funcionario::getNome));</code></pre>
+    <p class="success">✅ Status: Lista exibida em ordem alfabética (Alice, Arthur, Caio, ...).</p>
+
+    <h4>3.11 – Imprimir total dos salários</h4>
+    <pre><code>BigDecimal totalSalarios = funcionarios.stream()
+        .map(Funcionario::getSalario)
+        .reduce(BigDecimal.ZERO, BigDecimal::add);</code></pre>
+    <p class="success">✅ Status: Total calculado e exibido: R$ 50.867,22 (após aumento de 10%).</p>
+
+    <h4>3.12 – Quantos salários mínimos cada funcionário ganha</h4>
+    <p><strong>Salário mínimo considerado:</strong> R$ 1212,00</p>
+    <pre><code>double qtd = f.getSalario().doubleValue() / 1212.00;</code></pre>
+    <p class="success">✅ Status: Todos os funcionários exibidos com quantidade de salários mínimos (ex: Miguel = 17,35).</p>
+
+    <h2>🛠️ FERRAMENTAS UTILIZADAS</h2>
+    <ul>
+        <li><strong>IDE:</strong> Visual Studio Code</li>
+        <li><strong>Linguagem:</strong> Java 17</li>
+        <li><strong>Extensões:</strong> Java Extension Pack, Code Runner</li>
+        <li><strong>Terminal:</strong> Integrado ao VS Code (Windows)</li>
+        <li><strong>Sistema Operacional:</strong> Windows 10/11</li>
+    </ul>
+
+    <h2>📁 ESTRUTURA DO PROJETO</h2>
+    <div class="project-tree">
+ProjetoFuncionarios/
+├── src/
+│   └── main/
+│       ├── Pessoa.java
+│       ├── Funcionario.java
+│       └── Principal.java
+├── README.md
+└── RELATORIO.md
+    </div>
+
+    <h2>▶️ COMO EXECUTAR O PROJETO</h2>
+    <ol>
+        <li>Abra o terminal na raiz do projeto.</li>
+        <li>Compile os arquivos:<br><code>javac -d . src/main/*.java</code></li>
+        <li>Execute o programa:<br><code>java main.Principal</code></li>
+    </ol>
+
+    <h2>📤 ENTREGA</h2>
+    <ul>
+        <li>Projeto exportado como <code>.zip</code></li>
+        <li>Relatório técnico (este documento em HTML, PDF e Word)</li>
+        <li>Código-fonte organizado e comentado</li>
+        <li>Saída do console validada e funcional</li>
+        <li>Repositório público no GitHub: <a href="https://github.com/Cor4l92/desafio-java-projedata-funcionarios" target="_blank">github.com/Cor4l92/desafio-java-projedata-funcionarios</a></li>
+    </ul>
+
+    <h2>💬 CONSIDERAÇÕES FINAIS</h2>
+    <p>Este desafio foi uma excelente oportunidade para aplicar conceitos fundamentais da programação em Java, como:</p>
+    <ul>
+        <li>Orientação a Objetos (herança, encapsulamento)</li>
+        <li>Manipulação de Collections (List, Map, Stream API)</li>
+        <li>Tratamento de datas com <code>LocalDate</code></li>
+        <li>Formatação de saída para atender requisitos específicos</li>
+        <li>Lógica de negócios e resolução de problemas práticos</li>
+    </ul>
+    <p>Todas as funcionalalidades foram implementadas conforme especificado, e o programa foi testado com sucesso, gerando a saída esperada em todas as etapas.</p>
+    <p>Estou muito motivado pela oportunidade de participar do processo seletivo da <strong>Projedata Informática</strong> e coloco-me à disposição para eventuais esclarecimentos, entrevistas técnicas ou novos desafios.</p>
+    <p>Agradeço pela atenção!</p>
+
+    <div class="contact">
+        <h3>👨‍💻 CONTATO</h3>
+        <p><strong>Sandro Luis de Paula Junior</strong><br>
+        📧 <a href="mailto:sandro.sd.luis@gmail.com">sandro.sd.luis@gmail.com</a><br>
+        💻 <a href="https://github.com/Cor4l92" target="_blank">GitHub</a><br>
+         <a href="https://wa.me/5532991063549" target="_blank">+55 32 9 9106-3549 (WhatsApp)</a></p>
+    </div>
+
+    <div class="footer">
+        <p>Relatório gerado em 05/04/2025 — Desafio Prático Java — Projedata Informática</p>
+    </div>
+</body>
+</html>
