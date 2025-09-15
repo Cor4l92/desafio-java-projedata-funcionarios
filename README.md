@@ -78,22 +78,30 @@ desafio-java-projedata-funcionarios/
    javac -d . ProjetoFuncionarios/src/main/*.java
 Execute o programa :
 java main.Principal
+
+
 📌 Observação: O código está organizado com pacote main, então é necessário usar main.Principal. 
 📷 Prints de Execução
 🖼 Print1: Saída do programa após compilação e execução
+
 ![Print 1](print1.jpg)
 
 🖼 Print2: Comandos digitados no terminal
+
+
 ![Print 2](print2.jpg)
 
 📄 Relatório Completo
-👉 [Clique aqui para ver o relatório detalhado em HTML](Relatório - Desafio Java - Projedata Informática.html)
+👉 [Clique aqui para ver o Relatório em HTML](Relatorio 2.html)
+(Relatório - Desafio Java - Projedata Informática.html)
+
 
 🎯 Autor
 Sandro Luis de Paula Junior
 📧 sandro.sd.luis@gmail.com
 📱 WhatsApp
 💻 GitHub
+
 
 Tags (Topics)
 #java #oop #desafio-tecnico #junior-developer #programacao #projedata #funcionarios #stream-api #bigdecimal #localdate #collections #desenvolvimento-deftware
