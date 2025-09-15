@@ -95,8 +95,8 @@ java main.Principal
 
 ## Relatórios do Projeto
 
-- [Relatório HTML - Parte 1](Relatorio 2 .html) / - [Relatório HTML - Parte 1](Relatorio 2.html)
-- [Relatório PDF - Desafio Java](Relatório - Desafio Java - Projedata Informática.pdf) / - [Relatório PDF - Desafio Java](Relatório - Desafio Java - Projedata Informática.pdf)
+- [Relatório HTML](Relatorio_2.html)
+- [Relatório PDF](Relatorio-Desafio-Java.pdf)
 
 
 🎯 Autor
