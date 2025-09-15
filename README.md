@@ -93,7 +93,13 @@ java main.Principal
 
 📄 Relatório Completo
 👉 [Clique aqui para ver o Relatório em HTML](Relatorio 2.html)
-(Relatório - Desafio Java - Projedata Informática.html)
+
+[Relatório do Desafio Java](Relatório - Desafio Java - Projedata Informática.html)
+
+## Relatórios do Projeto
+
+- [Relatório HTML - Parte 1](Relatorio 2.html)
+- [Relatório HTML - Desafio Java](Relatório - Desafio Java - Projedata Informática.html)
 
 
 🎯 Autor
