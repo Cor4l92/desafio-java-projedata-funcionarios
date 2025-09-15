@@ -1,6 +1,18 @@
 # 🧑‍💻 Desafio Prático Java — Projedata Informática
 
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?logo=java&logoColor=white)
+![Java Version](https://img.shields.io/badge/Java_Version-17+-339933?logo=java&logoColor=white)
+![OOP](https://img.shields.io/badge/OOP-Supported-007ACC?logo=object-oriented&logoColor=white)
+![Stream API](https://img.shields.io/badge/Stream_API-Used-FF6B35?logo=java&logoColor=white)
+![BigDecimal](https://img.shields.io/badge/BigDecimal-Used-2B90B6?logo=java&logoColor=white)
+![LocalDate](https://img.shields.io/badge/LocalDate-Used-4B8BBE?logo=java&logoColor=white)
+![Collections](https://img.shields.io/badge/Collections-Used-3776AB?logo=java&logoColor=white)
+![VS Code](https://img.shields.io/badge/Editor-VS_Code-007ACC?logo=visualstudiocode&logoColor=white)
+![Windows](https://img.shields.io/badge/OS-Windows-0078D6?logo=windows&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
 > 💡 Um projeto completo em Java para gestão de funcionários, desenvolvido como parte do processo seletivo para a vaga de **Desenvolvedor de Software (Atendimento Técnico) — Júnior** na **Projedata Informática**.
+
 
 ---
 
@@ -68,11 +80,11 @@ Execute o programa :
 java main.Principal
 📌 Observação: O código está organizado com pacote main, então é necessário usar main.Principal. 
 📷 Prints de Execução
-🖼 Print 1: Saída do programa após compilação e execução
-Print 1
+🖼 Print1: Saída do programa após compilação e execução
+![Print 1](print1.jpg)
 
-🖼 Print 2: Comandos digitados no terminal
-Print 2
+🖼 Print2: Comandos digitados no terminal
+![Print 2](print2.jpg)
 
 📄 Relatório Completo
 👉 [Clique aqui para ver o relatório detalhado em HTML](Relatório - Desafio Java - Projedata Informática.html)
