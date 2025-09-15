@@ -91,15 +91,12 @@ java main.Principal
 
 ![Print 2](print2.jpg)
 
-📄 Relatório Completo
-👉 [Clique aqui para ver o Relatório em HTML](Relatorio 2.html)
 
-[Relatório do Desafio Java](Relatório - Desafio Java - Projedata Informática.html)
 
 ## Relatórios do Projeto
 
-- [Relatório HTML - Parte 1](Relatorio 2.html)
-- [Relatório HTML - Desafio Java](Relatório - Desafio Java - Projedata Informática.html)
+- [Relatório HTML - Parte 1](Relatorio 2 .html)
+- [Relatório PDF - Desafio Java](Relatório - Desafio Java - Projedata Informática.pdf)
 
 
 🎯 Autor
