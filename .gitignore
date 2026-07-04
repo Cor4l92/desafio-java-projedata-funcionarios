@@ -1,0 +1,16 @@
+# Environment files
+.env
+.env.*
+*.env
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+
+# Java
+*.class
+*.jar
+*.war
+*.ear

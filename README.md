@@ -101,7 +101,7 @@ java main.Principal
 
 🎯 Autor
 Sandro Luis de Paula Junior
-📧 sandro.sd.luis@gmail.com
+📧 [EMAIL REDACTED]
 📱 WhatsApp
 💻 GitHub
 
